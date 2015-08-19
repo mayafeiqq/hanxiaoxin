@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title> jValidator Download: http://sc.xueit.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="JavaScript" src="jquery-1.3.2.min.js" charset="utf-8"></script>
+<script language="JavaScript" src="jvalidate-1.0.0.js" charset="utf-8"></script>
+<script language="JavaScript" src="jmessagebox-1.0.0.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="messagebox/blue/messagebox.css" />
+</head>
+<body>
+<form method="post" action="?">
+<style>
+.body,td {font-size: 12px;line-height:16px;}
+.normaltips {border: none; padding: 2px; margin: 2px; height: 16px;}
+.errortips {border: 1px solid red; background-color:#FFFFCC;}
+.correcttips {border: 1px solid green; background-color:#FFFFFF;}
+</style>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="34%">*姓名:</td>
+    <td width="66%">
+      <input name="name" type="text" id="name" size="30" jvpattern="^.+$" jverrortip="请输入正确的姓名." jvtipid="spt_name" jvmethod="checkname" />
+      <span id="spt_name" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>*密码:</td>
+    <td>
+      <input name="password" type="password" id="password" size="30" jvpattern="^.{4,}$" jverrortip="请输入您的密码,密码不能少于4位字符." jvtipid="spt_password" />
+      <span id="spt_password" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>*确定密码:</td>
+    <td>
+      <input name="password1" type="password" id="password1" size="30" jvcompareid="password" jverrortip="两次输入的密码不相同." jvcorrecttip="太棒了，输对了密码" jvtipid="spt_password1" />
+      <span id="spt_password1" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>*国家:</td>
+    <td>
+      <select name="country" id="country" jvpattern="^.+$" jverrortip="请选择国家." jvtipid="spt_country">
+	  <option value="">..请选择</option>
+	  <option value="中国">中国</option>
+	  </select>
+      <span id="spt_country" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>*电子邮件:</td>
+    <td>
+      <input name="email" type="text" id="email" size="30" jvpattern="^\w+([\-_+\.]\w+)*@\w+([\-_\.]\w+)*\.\w+([\-_\.]\w+)*$" jverrortip="请输入正确的电子邮件." jvtipid="spt_email" />
+      <span id="spt_email" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>联系地址:</td>
+    <td>
+      <input name="address" type="text" id="address" size="30" value="" jvpattern="^.{3,}$" jverrortip="请输入正确的地址." jvtipid="spt_address" jvrequired="false" />
+      <span id="spt_address" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>*选择兴趣:</td>
+    <td>
+	    <select name="interest" size="6" id="interest" multiple jvpattern="^([^,]+,?){2,}$" jverrortip="必须选择两项或以上." jvtipid="spt_interest">
+		  <option value="0">打篮球</option>
+		  <option value="1">踢足球</option>
+		  <option value="2">跑步</option>
+		  <option value="2">完游戏</option>
+		</select>(按住ctrl键多选)
+      <span id="spt_interest" class="normaltips" jverrorclass="errortips" jvcorrectclass="correcttips"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>* 必填项</td>
+    <td>
+      <input type="submit" name="button" value="Submit" class="submit1" />
+      <input type="hidden" name="do" value="send" />
+    </td>
+  </tr>
+</table>
+</form>
+<script language="JavaScript">
+<!--
+$.jMessageBox.settings.yesButtonText = '确定';
+$('form').jValidate({
+	blurvalidate : true /*,
+	isbubble : false,
+	onerror : function(item,form){
+		$.jMessageBox.show('错误', item.attr('jverrortip'));
+	} **/
+});
+
+function checkname(item){
+	if(item.val() != 'test'){
+		return true;
+	}else{
+		return { result : false, message : 'test 用户名已被注册'};
+	}
+}
+//-->
+</script>
+</body>
+</html>

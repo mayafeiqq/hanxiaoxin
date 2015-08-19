@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>PROTEUS | Responsive Portfolio Theme By Creativusmouse</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="HTML Template best suited for business sites and portfolios" />
+<meta name="keywords" content="Some keywords that best describe your business" />
+<meta name="author" content="Creativusmouse" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="files/css/foundation.min.css">
+<link rel="stylesheet" href="files/css/styles.css">
+<link rel="icon" href="files/images/favicon.ico" />
+<link href="files/plugins/titan/css/jquery.titanlighbox.html" rel="stylesheet">
+
+<!-- GOOGLE FONT - SOURCE SANS PRO -->
+<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet'>
+
+<!-- JAVASCRIPT FOUNDATION (COMPRESSED) -->
+<script src="files/js/foundation.min.js"></script>
+<script src="files/js/modernizr.foundation.js"></script>
+<script src="files/js/app.js"></script>
+
+<!-- THEMES PANEL -->
+<link rel="stylesheet" href="files/themes_panel/farbtastic/farbtastic.css">
+<link rel="stylesheet" href="files/themes_panel/themes_panel.css">
+<link rel="stylesheet" href="files/css/colors.css">
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<!-- THEMES PANEL -->
+<div id="themes_panel">
+  <div id="themes_menu">
+    <div class="segment">
+      <h6>Theme Colour</h6>
+      <ul class="theme buttons">
+        <li><a href="#" title="purple"><img src="files/themes_panel/buttons/theme_purple.jpg" alt="" /></a></li>
+        <li><a href="#" title="pink"><img src="files/themes_panel/buttons/theme_pink.jpg" alt="" /></a></li>
+        <li><a href="#" title="blue"><img src="files/themes_panel/buttons/theme_blue.jpg" alt="" /></a></li>
+        <li><a href="#" title="green"><img src="files/themes_panel/buttons/theme_green.jpg" alt="" /></a></li>
+        <li><a href="#" title="orange"><img src="files/themes_panel/buttons/theme_orange.jpg" alt="" /></a></li>
+        <li><a href="#" title="red"><img src="files/themes_panel/buttons/theme_red.jpg" alt="" /></a></li>
+      </ul>
+    </div>
+    <div class="segment"> Background
+      <div class="pick_color"> <a class="pick_color_btn">
+        <form>
+          <input type="text" id="color" name="color" readonly value="#ccc" />
+        </form>
+        </a> </div>
+    </div>
+    <div class="segment noborder"> <a class="reset_btn" href="#">Reset</a> </div>
+  </div>
+  <div id="toggle_button"><a href="#"></a></div>
+  <div id="colorpicker"></div>
+</div>
+<!-- END THEMES PANEL --> 
+
+<!-- HEADER -->
+<div id="header">
+  <div class="row">
+    <div class="three columns"> <a href="index-2.html" title="Proteus" id="logo"></a> </div>
+    
+    <!-- NAVIGATION -->
+    <div class="nine columns">
+      <nav class="top-bar">
+        <ul>
+          <!-- RESPONSIVE NAVIGATION -->
+          <li class="name">
+            <h1><a href="#"> Please select your page</a></h1>
+          </li>
+          <li class="toggle-topbar"><a href="#"></a></li>
+          <!-- END RESPONSIVE NAVIGATION -->
+        </ul>
+        <section>
+          <ul class="right">
+            <li> <a href="index-2.html">Home</a> </li>
+            <li class="has-dropdown"> <a href="#">Pages</a>
+              <ul class="dropdown">
+                <li><a href="left_sidebar.html">Left Sidebar Page</a></li>
+                <li><a href="full_width.html">Full Width Page</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="error.html">404 Error Page</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown"> <a class="active" href="#">Shortcodes</a>
+              <ul class="dropdown">
+                <li><a href="columns.html">Columns</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="tabs_and_toggles.html">Tabs &amp; Toggles</a></li>
+                <li><a href="pricing_tables.html">Pricing Tables</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown"> <a href="#">Blog</a>
+              <ul class="dropdown">
+                <li><a href="blog.html">Blog Index</a></li>
+                <li><a href="single_post.html">Single Post</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown"> <a href="#">Portfolio</a>
+              <ul class="dropdown">
+                <li><a href="portfolio_2_col.html" class="">Portfolio 2 Columns</a></li>
+                <li><a href="portfolio_3_col.html">Portfolio 3 Columns</a></li>
+                <li><a href="portfolio_4_col.html">Portfolio 4 Columns</a></li>
+                <li><a href="portfolio_single.html">Single Project</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="shadow-down"></div>
+  </div>
+</div>
+<!--END HEADER --> 
+<!-- PAGE HEADER -->
+<div class="container page-header ph-bg1">
+  <div class="row">
+    <div class="twelve columns">
+      <p class="page-title">Typography</p>
+      <ul class="breadcrumbs">
+        <li><a href="index-2.html">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Shortcodes</a></li>
+        <li><a href="#">Typography</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END PAGE HEADER -->
+<div class="container main_content">
+  <div class="row">
+    <div class="nine columns">
+      <div class="twelve columns">
+        <h1> H1 header example </h1>
+        <h2> H2 header example </h2>
+        <h3> H3 header example </h3>
+        <h4> H4 header example </h4>
+        <h5> H5 header example </h5>
+        <h6> H6 header example </h6>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="twelve columns">
+        <h1> Dropcaps </h1>
+        <p> <span class="dropcap1">A</span>enean vulputate
+          imperdiet arcu, eget tempus elit faucibus in.
+          Suspendisse venenatis, justo ac faucibus imperdiet,
+          neque dui suscipit ligula, ac condimentum dui neque et
+          est. Duis sagittis rutrum erat sed aliquet. Ut eget
+          purus et nunc iaculis congue eu eu nibh. Aliquam ac
+          aliquet leo. Curabitur leo urna, vulputate id vulputate
+          id, pulvinar et leo. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac
+          turpis egestas. </p>
+        <br />
+        <p> <span class="dropcap2">P</span>ellentesque vestibulum
+          nunc nec quam fermentum at venenatis sapien
+          consectetur. Nulla ut augue nec ligula ultricies
+          pharetra ut nec dui. Etiam egestas facilisis volutpat.
+          Quisque non fermentum nisl. Vivamus posuere laoreet
+          augue, eget volutpat libero accumsan vitae. Aliquam
+          ultrices, quam sed posuere pretium, sapien libero
+          tempus mi, sed consequat erat leo et magna. </p>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="twelve columns">
+        <h1> Image in paragraphs </h1>
+        <span class="frame_left"><img src="files/images/paragraph_1.jpg" alt="" border="0" /></span>
+        <p> Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in. Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Duis sagittis rutrum erat sed
+          aliquet. Ut eget purus et nunc iaculis congue eu eu
+          nibh. Aliquam ac aliquet leo. Curabitur leo urna,
+          vulputate id vulputate id, pulvinar et leo.
+          Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Quisque dapibus
+          lectus eu lorem consectetur sed porttitor ipsum congue.
+          Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in.<br />
+          <br />
+          Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in. Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Duis sagittis rutrum erat sed
+          aliquet. Ut eget purus et nunc iaculis congue eu eu
+          nibh. Aliquam ac aliquet leo. Curabitur leo urna,
+          vulputate id vulputate id, pulvinar et leo. </p>
+        <br />
+        <br />
+        <span class="frame_right"><img src="files/images/paragraph_2.jpg" alt="" border="0" /></span>
+        <p> Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in. Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Duis sagittis rutrum erat sed
+          aliquet. Ut eget purus et nunc iaculis congue eu eu
+          nibh. Aliquam ac aliquet leo. Curabitur leo urna,
+          vulputate id vulputate id, pulvinar et leo.
+          Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Quisque dapibus
+          lectus eu lorem consectetur sed porttitor ipsum congue.
+          Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in.<br />
+          <br />
+          Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Aenean vulputate imperdiet arcu, eget tempus elit
+          faucibus in. Suspendisse venenatis, justo ac faucibus
+          imperdiet, neque dui suscipit ligula, ac condimentum
+          dui neque et est. Duis sagittis rutrum erat sed
+          aliquet. Ut eget purus et nunc iaculis congue eu eu
+          nibh. Aliquam ac aliquet leo. Curabitur leo urna,
+          vulputate id vulputate id, pulvinar et leo.
+          Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Quisque dapibus
+          lectus eu lorem consectetur sed porttitor ipsum congue. </p>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="twelve columns">
+        <h1> Blockquotes </h1>
+        <div class="quoteBox">
+          <div class="quote-text"> Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. </div>
+        </div>
+        <div class="quoteBox2">
+          <div class="quote-text2"> Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. </div>
+        </div>
+        <hr/>
+        <h1> Pullquote </h1>
+        <p> <span class="quote_left">Aenean vulputate imperdiet
+          arcu, eget tempus elit faucibus in. Suspendisse
+          venenatis, justo ac faucibus.</span> Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum. </p>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="six columns">
+        <h1>Labels</h1>
+        <div class="row">
+          <div class="six columns"> 
+            <!-- Types -->
+            <p><span class="label">Normal Label</span></p>
+            <p><span class="secondary label">Secondary Label</span></p>
+            <p><span class="success label">Success Label</span></p>
+            <p><span class="alert label">Alert Label</span></p>
+          </div>
+          <div class="six columns"> 
+            
+            <!-- Styles -->
+            <p><span class="label">Regular Label</span></p>
+            <p><span class="radius label">Radius Label</span></p>
+            <p><span class="round label">Round Label</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="twelve columns">
+        <h1>Alerts</h1>
+        <div class="alert-box"> This is a standard alert. <a href="#" class="close">&times;</a> </div>
+        <div class="alert-box success"> This is a success alert. <a href="#" class="close">&times;</a> </div>
+        <div class="alert-box alert"> This is an alert. <a href="#" class="close">&times;</a> </div>
+        <div class="alert-box secondary"> This is a secondary alert. <a href="#" class="close">&times;</a> </div>
+      </div>
+      <div class="twelve columns">
+        <hr/>
+      </div>
+      <div class="twelve columns">
+        <h3>Lists</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>UL .disc</h4>
+            
+            <!-- List Disc -->
+            <ul class="disc">
+              <li>List item longer description.</li>
+              <li>List item</li>
+              <li>List item
+                <ul>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                </ul>
+              </li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+            <!-- End List Disc --> </div>
+          <div class="four columns">
+            <h4>UL .circle</h4>
+            <!-- List Circle -->
+            <ul class="circle">
+              <li>List item longer description.</li>
+              <li>List item</li>
+              <li>List item
+                <ul>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                </ul>
+              </li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+            <!-- End List Circle --> 
+          </div>
+          <div class="four columns">
+            <h4>UL .square</h4>
+            
+            <!-- List Square -->
+            <ul class="square">
+              <li>List item longer description.</li>
+              <li>List item</li>
+              <li>List item
+                <ul>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                  <li>Nested List Item</li>
+                </ul>
+              </li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+            <!-- End List Square --> 
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="four columns">
+          <h4>UL .arrow</h4>
+          <div class="list-type-3">
+            <ul>
+              <li> <a href="#">List item longer description.</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a>
+                <ul>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="four columns">
+          <h4> UL. check</h4>
+          <div class="list-type-1">
+            <ul>
+              <li> <a href="#">List item longer description.</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a>
+                <ul>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="four columns">
+          <h4> UL. error</h4>
+          <div class="list-type-2">
+            <ul>
+              <li> <a href="#">List item longer description.</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a>
+                <ul>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                  <li> <a href="#">Nested List item</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+              <li> <a href="#">List item</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <hr/>
+        </div>
+        <div class="twelve columns">
+          <h1> Icon Boxes </h1>
+          <!-- SMALL ICON BLOCK -->
+          <div class="container small-icon-block">
+            <div class="three columns"> <img src="files/images/small_icon_1.png" alt="" />
+              <h5>Responsive Design</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_2.png" alt="" />
+              <h5>Unlimited Colours</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_3.png" alt="" />
+              <h5>Awsome Slider</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_4.png" alt="" />
+              <h5>Well Documented</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="clear"></div>
+            <div class="three columns"> <img src="files/images/small_icon_5.png" alt="" />
+              <h5>Great Support</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_6.png" alt="" />
+              <h5>Working Contact Form</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_7.png" alt="" />
+              <h5>Custom Shortcodes</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+            <div class="three columns"> <img src="files/images/small_icon_8.png" alt="" />
+              <h5>PSD Files Included</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+                tellus ac cursus.</p>
+            </div>
+          </div>
+        </div>
+        <!-- END SMALL ICON BLOCK --> 
+      </div>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="sidebar three columns">
+      <h2 class="sb-header">Latest Posts</h2>
+      <p><a href="single_post.html"><img class="img_float_left" src="files/images/thumb_1.jpg" width="40" height="40" alt="" /> <strong>Lorem ipsum dolor sit.</strong><br>
+        28 February 2013</a> </p>
+      <p><a href="single_post.html"><img class="img_float_left" src="files/images/thumb_2.jpg" width="40" height="40" alt="" /> <strong>Lorem ipsum dolor sit.</strong><br>
+        15 February 2013</a> </p>
+      <p><a href="single_post.html"><img class="img_float_left" src="files/images/thumb_3.jpg" width="40" height="40" alt="" /> <strong>Lorem ipsum dolor sit.</strong><br>
+        30 January 2013</a> </p>
+      <div class="divider3"></div>
+      <h2 class="sb-header"> Blog Categories </h2>
+      <div class="list-type-sidebar">
+        <ul>
+          <li><a href="#">Photoshop</a></li>
+          <li><a href="#">Creativity</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Magazine</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Webdesign</a></li>
+        </ul>
+      </div>
+      <div class="divider3"></div>
+      <h2 class="sb-header"> Archive </h2>
+      <div class="list-type-sidebar">
+        <ul>
+          <li><a href="#">February 2013</a></li>
+          <li><a href="#">January 2013</a></li>
+          <li><a href="#">December 2012</a></li>
+          <li><a href="#">November 2012</a></li>
+          <li><a href="#">October 2012</a></li>
+          <li><a href="#">September 2012</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- END SIDEBAR --> 
+    </div>
+</div>
+<!-- FOOTER -->
+<div class="container footer">
+  <div class="row">
+    <div class="three columns">
+      <h5>Navigation</h5>
+      <div class="list-type-footer">
+        <ul>
+          <li> <a href="index-2.html">Home</a> </li>
+          <li> <a href="team.html">Pages</a> </li>
+          <li> <a href="typography.html">Shortcodes</a> </li>
+          <li> <a href="blog.html">Blog</a> </li>
+          <li> <a href="portfolio_4_col.html">Portfolio</a> </li>
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="three columns">
+      <h5>Monthly Archives</h5>
+      <div class="list-type-footer">
+        <ul>
+          <li> <a href="index-2.html">February 2013</a> </li>
+          <li> <a href="portfolio_4_col.html">January 2013</a> </li>
+          <li> <a href="blog.html">December 2012</a> </li>
+          <li> <a href="features.html">November 2012</a> </li>
+          <li> <a href="contact.html">October 2012</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="three columns">
+      <h5>Latest Posts</h5>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_1.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eu</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_2.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eut</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_3.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eu</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="three columns">
+      <h5>Contact Us</h5>
+      <img class="img_float_left" src="files/images/footer_icon_1.png" alt="" />
+      <p> (+44) 773 339 9999 </p>
+      <img class="img_float_left" src="files/images/footer_icon_2.png" alt="" />
+      <p> <a href="mailto:youremailaddress">info@yourwebsite.com</a> </p>
+      <img src="files/images/footer_icon_3.png" alt="" class="img_float_left" />
+      <p class="tab"> <strong>Your Company LDT</strong><br />
+        Street nr 100<br />
+        London, NW1 2RG<br />
+        UK </p>
+    </div>
+  </div>
+</div>
+<!-- END FOOTER -->  
+<!-- SUBFOOTER -->
+<div class="container subfooter">
+  <div class="row">
+    <div class="six columns">
+      <p> &#169; Copyright - More Templates <a href="http://www.17sucai.com/" target="_blank" title="17素材网">17素材网</a> - Collect from <a href="http://www.17sucai.com/" title="网页模板" target="_blank">网页模板</a></p>
+    </div>
+    <div class="six columns">
+      <div class="large-social-block"> <a href="#"><span class="social dribbble"></span></a> <a href="#"><span class="social flickr"></span></a> <a href="#"><span class="social linkedin"></span></a> <a href="#"><span class="social google"></span></a> <a href="#"><span class="social twitter"></span></a> <a href="#"><span class="social facebook"></span></a>
+ </div>
+    </div>
+  </div>
+</div>
+<!-- END SUBFOOTER --> 
+
+<!-- JAVASCRIPT --> 
+<script src="files/js/jquery.min.js"></script> 
+<script src="files/js/jquery.infieldlabel.min.js"></script> 
+<script src="files/js/scripts.js"></script>
+<script src="files/js/app.js"></script> 
+
+<!-- Titan Lightbox --> 
+<script src="files/titan/js/prettify.js"></script> 
+<script src="files/titan/js/jquery.titanlighbox.js"></script> <!-- Themes Panel --> 
+<script src="files/themes_panel/farbtastic/farbtastic.js"></script> 
+<script src="files/themes_panel/themes_panel.js"></script>
+</body>
+</html>

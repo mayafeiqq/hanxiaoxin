@@ -1,0 +1,74 @@
+﻿.comboboxContainer
+{
+	border: none;
+	outline: none;
+	font-family: 'Copperplate Gothic Bold';
+}
+/*download by http://sc.xueit.com*/
+.comboboxValueContainer
+{
+	background-image: url(../../images/metal_content.gif);
+}
+
+.comboboxValueContent
+{
+	padding-left: 12px;
+	padding-top: 0px;
+	margin-top: -2px;
+	text-transform: uppercase;
+	max-height: 30px;
+}
+
+.comboboxDropDownContainer
+{
+	border: none;
+	background: #fff;
+	background: url(../../images/metal_ddl2.gif) repeat left top;
+	padding-left: 3px;
+	cursor: default;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.comboboxDropDownButton
+{
+	width: 35px;
+	height: 50px;
+	background-image: url(../../images/metal_button.gif);
+}
+
+.comboboxGroupItemHeader
+{
+	display: block;
+	border-bottom: solid 1px #999;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.comboboxGroupItemContainer
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.comboboxItem
+{
+	color: #000;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.comboboxItemHover
+{
+	font-style: italic;
+	border-left: solid 3px #000;
+	border-right: solid 3px #000;
+}
+
+.comboboxGroupItemContainer .comboboxItem
+{
+	padding-left: 20px;
+	margin-left: 0px;
+}

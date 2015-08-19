@@ -1,0 +1,71 @@
+BODY {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+A {	OUTLINE-STYLE: none; COLOR: #07f; CURSOR: pointer; TEXT-DECORATION: none;font-size:12px}
+A:hover {	TEXT-DECORATION: underline}
+DL {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+DT {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+DD {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+UL {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+OL {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+LI {	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+
+/*Download by http://sc.xueit.com*/
+.banner {	POSITION: relative; WIDTH: 950px; HEIGHT: 260px; OVERFLOW: hidden}
+.banner-img {	Z-INDEX: 1; POSITION: absolute; WIDTH: 950px; HEIGHT: 260px; OVERFLOW: hidden; TOP: 0px; LEFT: 0px}
+.banner-img .banner-explain {	FLOAT: left}
+.banner-explain {
+	POSITION: relative;
+	PADDING-LEFT: 40px;
+	WIDTH: 996;
+	HEIGHT: 210px;
+	PADDING-TOP: 50px
+}
+.banner-explain DT {	POSITION: absolute; WIDTH: 60px; DISPLAY: block; HEIGHT: 100px}
+.banner-explain DT A {	WIDTH: 60px; DISPLAY: block; HEIGHT: 100px}
+.banner-explain DT SPAN {	DISPLAY: none}
+.banner-explain DD {	POSITION: absolute; TOP: 130px; LEFT: 135px}
+.banner-explain LI {	FLOAT: left}
+.banner-explain LI.intro {	LINE-HEIGHT: 1.2; MARGIN-TOP: 15px}
+.banner-btn {	WIDTH: 112px; DISPLAY: block; HEIGHT: 32px; MARGIN-RIGHT: 8px}
+.slj .banner-btn {	WIDTH: 130px}
+.aask .banner-btn {	WIDTH: 130px}
+.banner-btn A {	WIDTH: 100%; DISPLAY: block; HEIGHT: 100%}
+.banner-btn SPAN {	DISPLAY: none}
+.banner-explain A {	TEXT-DECORATION: underline}
+.banner-explain .aask A {	COLOR: #eefe8f}
+.banner-explain .sdmjf A {	COLOR: #e1dcff}
+.banner-explain .txf A {	COLOR: #dff1ff}
+.banner-explain .sfk A {	COLOR: #dff1ff}
+.banner-explain .slj A {	COLOR: #ba4c45}
+.banner-explain .wsgw A {	COLOR: #e63423}
+.banner-explain .xykhk A {	COLOR: #fdffdf}
+.banner-explain .jfz A {	COLOR: #fdffdf}
+.banner-explain .swf A {	COLOR: #dff1ff}
+.banner-icon {	Z-INDEX: 3; POSITION: absolute; PADDING-BOTTOM: 4px; PADDING-LEFT: 20px; WIDTH: 360px; BOTTOM: 0px; PADDING-RIGHT: 20px; HEIGHT: 38px; PADDING-TOP: 3px}
+.banner-overlay-bg {	Z-INDEX: 2; BORDER-BOTTOM: #fff 1px solid; POSITION: absolute; FILTER: alpha(opacity=50); BORDER-LEFT: #fff 1px solid; BACKGROUND-COLOR: #000; WIDTH: 362px; DISPLAY: none; HEIGHT: 41px; BORDER-TOP: #fff 1px solid; TOP: 1px; BORDER-RIGHT: #fff 1px solid; LEFT: 2px; -moz-opacity: .50; opacity: .50}
+.hover .banner-overlay-bg {	DISPLAY: block}
+.banner-icon UL {	Z-INDEX: 2; POSITION: absolute}
+.banner-icon LI {	POSITION: relative; PADDING-BOTTOM: 3px; MARGIN: 0px 3px 0px 0px; PADDING-LEFT: 3px; WIDTH: 32px; PADDING-RIGHT: 3px; FLOAT: left; HEIGHT: 32px; CURSOR: pointer; PADDING-TOP: 3px}
+.banner-icon LI.current {	BORDER-BOTTOM: #333 3px solid; BORDER-LEFT: #333 3px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #333 3px solid; BORDER-RIGHT: #333 3px solid; PADDING-TOP: 0px}
+.banner-icon LI DIV {	BACKGROUND-IMAGE: url(../images/ico-banner-normal.png); BACKGROUND-REPEAT: no-repeat; HEIGHT: 100%}
+.banner-icon LI .pointer {	BACKGROUND-IMAGE: url(../images/ico-banner-normal.png); BACKGROUND-REPEAT: no-repeat; HEIGHT: 100%}
+.banner-icon LI.current DIV {	BACKGROUND-IMAGE: url(../images/ico-banner-hover.png)}
+.banner-icon LI .aask {	BACKGROUND-POSITION: -222px 0px}
+.banner-icon LI .aask .pointer {	BACKGROUND-POSITION: -222px -38px}
+.banner-icon LI .sdmjf {	BACKGROUND-POSITION: -74px 0px}
+.banner-icon LI .sdmjf .pointer {	BACKGROUND-POSITION: -74px -38px}
+.banner-icon LI .txf {	BACKGROUND-POSITION: 300px 0px}
+.banner-icon LI .txf .pointer {	BACKGROUND-POSITION: -37px -38px}
+.banner-icon LI .sfk {	BACKGROUND-POSITION: -296px 0px}
+.banner-icon LI .sfk .pointer {	BACKGROUND-POSITION: -296px -38px}
+.banner-icon LI .slj {	BACKGROUND-POSITION: -148px 0px}
+.banner-icon LI .slj .pointer {	BACKGROUND-POSITION: -148px -38px}
+.banner-icon LI .wsgw {	BACKGROUND-POSITION: 0px 0px}
+.banner-icon LI .wsgw .pointer {	BACKGROUND-POSITION: 0px -38px}
+.banner-icon LI .xykhk {	BACKGROUND-POSITION: -111px 0px}
+.banner-icon LI .xykhk .pointer {	BACKGROUND-POSITION: -111px -38px}
+.banner-icon LI .jfz {	BACKGROUND-POSITION: -185px 0px}
+.banner-icon LI .jfz .pointer {	BACKGROUND-POSITION: -185px -38px}
+.banner-icon LI .swf {	BACKGROUND-POSITION: 222px 0px}
+.banner-icon LI .swf .pointer {	BACKGROUND-POSITION: 222px -38px}
+.banner-icon LI .pointer {	POSITION: absolute; WIDTH: 32px; BACKGROUND-ATTACHMENT: scroll; DISPLAY: none; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: -222px -38px; HEIGHT: 6px; TOP: -7px}
+.banner-icon LI.current .pointer {	DISPLAY: block}

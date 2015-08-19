@@ -1,0 +1,68 @@
+﻿.comboboxContainer
+{
+	border: none;
+	font-family: Helvetica, Arial;
+}
+/*download by http://sc.xueit.com*/
+.comboboxValueContainer
+{
+	background: url(../../images/background_mac.gif) no-repeat left top;
+}
+
+.comboboxValueContent
+{
+	padding-left: 5px;
+	text-transform: uppercase;
+	font-size: 85%;
+	max-height: 15px;
+}
+
+.comboboxDropDownContainer
+{
+	border-right: solid 1px #000;
+	border-bottom: solid 1px #000;
+	border-left: solid 1px #aaa;
+	border-top: solid 1px #aaa;
+	background: #fff;
+	overflow: hidden;
+	padding-left: 3px;
+}
+
+.comboboxDropDownButton
+{
+	width: 19px;
+	height: 19px;
+	background-image: url(../../images/ddbutton_mac.gif);
+}
+
+.comboboxGroupItemHeader
+{
+	display: block;
+	font-weight: bold;
+}
+
+.comboboxGroupItemContainer
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.comboboxItem
+{
+	background: #fff;
+	color: #000;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.comboboxItemHover
+{
+	background-color: #3366cc;
+	color: #fff;
+}
+
+.comboboxGroupItemContainer .comboboxItem
+{
+	padding-left: 20px;
+	margin-left: 0px;
+}

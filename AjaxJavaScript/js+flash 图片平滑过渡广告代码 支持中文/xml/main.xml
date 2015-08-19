@@ -1,0 +1,34 @@
+<?xmlversion="1.0" encoding="UTF-8"?>
+
+<data>
+  <language linkBtnURL="images/gotoSite.png" />
+  <item fileType="IMAGE" duration="8000" URL="images/01.jpg" linkURL="http://sc.xueit.com/" target="_blank" gameid="UpClick" index="1">
+    <thumbnail URL="images/s1.jpg" type="我爱你" description1="完美礼物" description2="这是送你的" />
+    <title><![CDATA[完美礼物]]></title>
+    <description><![CDATA[为你精心构思，传递你的祝福！]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/02.jpg" linkURL="http://sc.xueit.com/" target="" gameid="SF" index="2">
+    <thumbnail URL="images/s2.jpg" type="商务首选" description1="精选奖杯" description2="表彰奖杯" />
+    <title><![CDATA[精选奖杯]]></title>
+    <description><![CDATA[水晶奖杯：是一种高尚纯洁的象征，常用于政府和企业颁发的奖品。
+它晶莹剔透，闪闪发光，手感细腻，可以在上面刻字、纹图案。]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/03.jpg" linkURL="http://sc.xueit.com/" target="" gameid="Lunia" index="3">
+    <thumbnail URL="images/s3.jpg" type="家居装饰" description1="花开富贵" description2="幸福美满" />
+    <title><![CDATA[花开富贵]]></title>
+    <description><![CDATA[家居装饰，花开富贵我中国传统吉祥图案之一，代表了
+人们对美满幸福生活、富有和高贵的向往。]]></description>
+  </item>
+    <item fileType="IMAGE" duration="8000" URL="images/04.jpg" linkURL="www.baidu.com" target="" gameid="Lunia" index="3">
+    <thumbnail URL="images/s4.jpg" type="商务往来" description1="水晶象棋" description2="高档华贵" />
+    <title><![CDATA[水晶象棋]]></title>
+    <description><![CDATA[隔河灿烂火荼分，局势方圆列阵云。 ]]></description>
+  </item>
+    <item fileType="IMAGE" duration="8000" URL="images/05.jpg" linkURL="http://sc.xueit.com/" target="" gameid="Lunia" index="3">
+    <thumbnail URL="images/s5.jpg" type="情人节" description1="水晶吊坠" description2="爱的见证" />
+    <title><![CDATA[水晶吊坠]]></title>
+    <description><![CDATA[和你在一起，见证爱的崇高！]]></description>
+  </item>
+ 
+   </data>
+

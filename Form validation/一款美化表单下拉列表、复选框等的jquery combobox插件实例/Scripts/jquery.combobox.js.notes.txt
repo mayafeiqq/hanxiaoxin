@@ -1,0 +1,12 @@
+- multiple combboxes affect each other on the blur event [100].
+	- fixed: using mousedown event makes the blur event to fail. changed back to click event.
+	
+- combobox.update() does not adjust the width of the DDL for new items added [0].
+
+- combobox.update() is too slow as it recreates the entire DDL [0]
+
+- when animationType is null or empty, clicking on the Combobox when the DDL is opened, will cause the DDL
+	to re-open. Events when DDL is open is Blur, Click [0].
+	
+- support all Select events [0]
+

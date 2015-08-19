@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBliC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>腾讯换肤技术</title>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE>
+ul{ padding:0px; margin:0px; list-style-type:none;}
+li{ padding:0px; margin:0px; list-style-type:none;}
+img{ border:0px;}
+#Soso { margin:0px auto; width:912px; height:78px}
+#Soso_Left { margin:5px; padding:8px;}
+#Skin div { float:left}
+#Skinlist { display:block; overflow:hidden; width:56px; height:11px;}
+#Skin li { float:left; width:14px; cursor:pointer; height:11px;}
+#def div{ background:url(images/skinbt.png) no-repeat;}
+#s1 div { background:url(images/skinbt.png) no-repeat;}
+#s2 div { background:url(images/skinbt.png) no-repeat;}
+#s3 div { background:url(images/skinbt.png) no-repeat;}
+#s4 div { background:url(images/skinbt.png) no-repeat;}
+#s5 div { background:url(images/skinbt.png) no-repeat;}
+#s6 div { background:url(images/skinbt.png) no-repeat;}
+#s7 div { background:url(images/skinbt.png) no-repeat;}
+#s8 div { background:url(images/skinbt.png) no-repeat;}
+#s9 div { background:url(images/skinbt.png) no-repeat;}
+#sar div{ background:url(images/skinbt.png) no-repeat;}
+#def div{ background-position:0px 0px;}
+#s1 div { background-position:0px -11px;}
+#s2 div { background-position:0px -22px;}
+#s3 div { background-position:0px -33px;}
+#s4 div { background-position:0px -44px;}
+#s5 div { background-position:0px -55px;}
+#s6 div { background-position:0px -66px;}
+#s7 div { background-position:0px -77px;}
+#s8 div { background-position:0px -88px;}
+#s9 div { background-position:0px -99px;}
+#sar { cursor:pointer;}
+#sar div { background-position:-10px -110px;}
+#sar div.s { background-position:0px -110px;}
+</STYLE>
+<link id=cssChange href="images/s01/s1v1013.css" type=text/css rel=stylesheet>
+<script language=javascript type=text/javascript>
+var MiniSite=new Object();
+MiniSite.Cookie={
+	set:function(name,value,expires,path,domain){
+		if(typeof expires=="undefined"){
+			expires=new Date(new Date().getTime()+24*3600*1000);
+		}
+		document.cookie=name+"="+escape(value)+((expires)?"; expires="+expires.toGMTString():"")+((path)?"; path="+path:"; path=/")+((domain)?";domain="+domain:"");
+	},
+	get:function(name){
+		var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+		if(arr!=null){
+			return unescape(arr[2]);
+		}
+		return null;
+	},
+	clear:function(name,path,domain){
+		if(this.get(name)){
+			document.cookie=name+"="+((path)?"; path="+path:"; path=/")+((domain)?"; domain="+domain:"")+";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+		}
+	}
+};
+
+	window.onerror = function()
+	{
+		return true;
+	}
+
+	if (!window._sT)
+	{window._sT = window.setTimeout;window.setTimeout = function(fCallback, nDelay, oObject){if (typeof fCallback == 'function'){if (!oObject){oObject = window;}var argu = Array.prototype.slice.call(arguments, 3);var newFunc = (function(){ fCallback.apply(oObject, argu); });	return window._sT(newFunc, nDelay);	}return window._sT(fCallback, nDelay);};}
+
+	var marTime = new Array();
+	var marWay = new Array();
+	var moveTime = new Array();
+	moveTime[0] = 0;
+	moveTime[1] = 0;
+	var speed = 30;
+	var fodTime = 0;
+	var proFlog = 0;
+	var proTime = 0;
+	function $(o){ return (typeof o == "object")?o:document.getElementById(o);}
+function getExpires(a){//a:day
+	var expires=new Date(new Date().getTime()+(a?a:1)*24*3600*1000);
+	return expires;
+}
+
+function setdefSkin(){
+	var expires = getExpires(90);
+	var n =  MiniSite.Cookie.get("TencentSkin");
+	if(n!=null){
+		call_0410("UNKNOWN","skin",n);
+		var m = MiniSite.Cookie.get("defblue");
+		if(!m){
+			setSkin(0);
+			MiniSite.Cookie.set("defblue","true",expires);
+		}else{
+			setSkin(n);
+		}
+			
+	}else{
+		call_0410("UNKNOWN","skin",0);
+		MiniSite.Cookie.set("defblue","true",expires);
+	}
+}
+var csslist = new Array("s01/s1v1013.css","s02/s2v1013.css","s03/s3v1013.css","s04/s4v1013.css","s05/s5v1013.css","s06/s6v1013.css","s07/s7v1013.css","s08/s8v1013.css","s09/s9v1013.css","s10/s10v1013.css")
+
+	function setSkin(n){var expires = getExpires(90);var css = $("cssChange");var cssurl = "images/";cssurl +=csslist[n];css.href=cssurl;MiniSite.Cookie.set("TencentSkin",n,expires);}
+
+	function formatSkin()
+	{var p = $("Skinlist").getElementsByTagName("li");var s = $("sar");for(i=0;i<p.length;i++){p[i].num = i;p[i].onclick = function(){setSkin(this.num);}}s.onclick = function() { openSkin("sar","Skinlist",140,56,2,0); };}
+
+	function _openSkin(o1,o2,max,min,speed,n)
+	{ return openSkin(o1,o2,max,min,speed,n);}
+
+	function _closeSkin(o1,o2,max,min,speed,n)
+	{ return closeSkin(o1,o2,max,min,speed,n);}
+
+	//n=0 skin n=1 pro
+	function openSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);	var s = $(o2);var w = s.offsetWidth;var move=function(){w+=speed;if(w>=max){w = max;s.style.width = w+"px";				if(moveTime[n]){window.clearInterval(moveTime[n]);}if(n){$("pro_arrow").className = "al";$("pro_arrow").onclick = function() {closeSkin(o1,o2,max,min,speed,n);}				}else{a.innerHTML = "<div class='s'><img src='images/9471252.gif' alt='收缩' /></div>";a.onclick = function() {closeSkin(o1,o2,max,min,speed,n);}}}else{s.style.width = w + "px";if(n){}else{s.style.display = "block";};}};moveTime[n] = window.setInterval(move,5);}
+
+	function closeSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);var s = $(o2);var w = s.offsetWidth;var move = function(){w-=speed;if(w<=min){w = min;s.style.width = w + "px";if(n){				$("pro_arrow").className = "ar";$("pro_arrow").onclick = function() {openSkin(o1,o2,max,min,speed,n);};}else{a.innerHTML = "<div><img src='images/9471252.gif' alt='更多皮肤' /></div>";a.onclick = function() { openSkin(o1,o2,max,min,speed,n);}	};		if(moveTime[n]){window.clearInterval(moveTime[n]);}}else{s.style.display = "block";s.style.width = w + "px";};};moveTime[n] = window.setInterval(move,5);}
+
+function call_0410(type,item,page)
+{try{var purl='';if (type == "A"){purl = window.event.srcElement.href;}else if (type == "IMG"){purl = window.event.srcElement.parentNode.href;};var iurl = 'pj=1001&item='+item+'&page='+page+'&url='+purl+'&rnd='+Math.random();var img  = new Image(1,1);img.onerror = function (){};img.src	 = iurl;	} catch (e) {}}
+
+function register0410(item,page) 
+{try{var type = window.event.srcElement.tagName;if (type == "A" || type == "IMG" ) {call_0410(type,item, page);}return true;}catch(e){}}
+</script>
+</head>
+<body onLoad="document.execCommand('BackgroundImageCache',false,true)">
+<div id=Soso onClick="register0410('sobar',1);">
+<div id=Soso_Left>
+<div id=Skin>
+<div id=Skinlist>
+<ul>
+<li id=def><div><img alt=默认 src="images/spacer.gif"></div></li>
+<li id=s1><div><img alt=淡蓝 src="images/spacer.gif"></div></li>
+<li id=s2><div><img alt=宁夏 src="images/spacer.gif"></div></li>
+<li id=s3><div><img alt=新绿 src="images/spacer.gif"></div></li>
+<li id=s4><div><img alt=世博 src="images/spacer.gif"></div></li>
+<li id=s5><div><img alt=水墨 src="images/spacer.gif"></div></li>
+<li id=s6><div><img alt=星空 src="images/spacer.gif"></div></li>
+<li id=s7><div><img alt=国庆 src="images/spacer.gif"></div></li>
+<li id=s8><div><img alt=咖啡 src="images/spacer.gif"></div></li>
+<li id=s9><div><img alt=紫色 src="images/spacer.gif"></div></li>
+</ul>
+</div>
+<div id=sar><div><img alt=展开 src="images/spacer.gif"></div></div>
+</div>
+<script type=text/javascript>formatSkin();setdefSkin();</script>
+</div>
+ </div>
+</body></html>

@@ -1,0 +1,14 @@
+- fix keyboard default processing by browsers [80]
+	- pressing up or down when the CB is focused causes the page to also move up and down
+	- IE/FF differ but similiar effect
+	
+- Check if DropDownButton is using a CSS image and the height of the image to support a 'pressed' state [90]
+	- Enhanced
+	- Does not refresh correctly and sometimes does not appear [90]
+		- This occurs because the Browser has not processed the Stylesheet quick enough. jquery.combobox process the layout
+			quicker than the browser can update its internal css states
+	
+- Check if DisplayValue is using a CSS image and the height of the image to support a 'pressed' state [90]
+	- New
+	- Will allow a focus state for the entire control, not just the drop-down button
+	- Does not refresh correctly and sometimes does not appear [0]

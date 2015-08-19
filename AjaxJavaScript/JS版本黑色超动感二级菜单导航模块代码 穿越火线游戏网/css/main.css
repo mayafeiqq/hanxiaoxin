@@ -1,0 +1,59 @@
+body{font-size:12px;font-family:Tahoma, Arial, Helvetica, sans-serif; background:#232222; color:#575453;} 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,blockquote,th,td{margin:0;padding:0;}
+
+.center{ text-align:center;}
+a{text-decoration:none; color:#575453;}
+a:hover{ text-decoration:underline;color:#403B36;}
+
+
+#wrap{ background:url(../images/body_bg.jpg) #EBE5DA repeat-x 0 0;}
+.container{ width:1000px; margin:0 auto;}
+#maincontent{ width:784px; background:url(../images/miancnt_bg.jpg) repeat-x 0 0;padding:12px 0 0 20px;}
+#centercnt{ width:620px;}
+#rightcnt{ width:124px; padding-right:20px; position:relative;}
+#nav{ position:relative; z-index:99;}
+#nav dt,#nav dt a{ background-image:url(../images/miannav_bg.jpg); background-repeat:no-repeat;}
+#nav dt{ height:91px; background-position:0 0; position:relative;}
+#nav dt a{ position:absolute; display:block;height:67px; top:24px; background-position:-9999px -9999px;}
+#nav dd{ position:absolute; overflow:hidden; display:none;z-index:200;opacity:0; height:153px; width:984px; top:91px; left:6px; background:url(../images/twoleve_bg.jpg) no-repeat 0 0;}
+#nav dd ul{float:left;height:132px; display:block;display:inline; padding:0; padding-top:21px;}
+#nav dd ul.curr{ background:url(../images/twolevetop_bg.jpg) repeat-x 0 0;}
+#nav dd ul li{overflow:hidden;}
+#nav dd ul li,#nav dd ul li a{ display:block;height:21px; float:left; line-height:21px; text-align:left;width:100%; }
+#nav dd ul li a{ color:#bab4b4; padding-left:15px;}
+#nav dd ul li a:hover{background:url(../images/btn_arr.gif) no-repeat -150px -99px; color:#03fae5; text-decoration:none;}
+#one_home{width:53px; left:6px;}
+#two_home{ display:none;}
+#one_home.curr{ background-position:-6px -115px;} 
+#one_news,#two_news{width:84px;}
+#one_news{left:59px;}
+#two_news{margin-left:53px;}
+#one_news.curr{ background-position:-59px -115px; }
+#one_gameinfo,#two_gameinfo{width:88px; }
+#one_gameinfo{left:143px;}
+#one_gameinfo.curr{ background-position:-143px -115px; }
+#one_download,#two_download{width:88px;}
+#one_download{ left:231px;}
+#one_download.curr{ background-position:-231px -115px; }
+#one_shortcut,#two_shortcut{width:89px;}
+#one_shortcut{ left:319px;}
+#two_shortcut{ margin-right:184px;}
+#one_shortcut.curr{ background-position:-319px -115px; }
+#one_cfarea,#two_cfarea{width:89px;}
+#one_cfarea{ left:592px;}
+#one_cfarea.curr{ background-position:-592px -115px; }
+#one_traitsys,#two_traitsys{ width:87px;}
+#one_traitsys{ left:681px;}
+#one_traitsys.curr{ background-position:-681px -115px;}
+#one_playerconcur,#two_playerconcur{width:84px; }
+#one_playerconcur{left:768px;}
+#one_playerconcur.curr{ background-position:-768px -115px; }
+#one_customser,#two_customser{width:87px;}
+#one_customser{ left:852px;}
+#one_customser.curr{ background-position:-852px -115px; }
+#one_bbs{width:51px; left:939px;}
+#one_bbs.curr{ background-position:-939px -115px; }
+#two_bbs{ width:49px;}
+
+#banner{ height:46px; padding:170px 0 0 490px; background:url(../images/home_banner.jpg) no-repeat 0 0;}
+

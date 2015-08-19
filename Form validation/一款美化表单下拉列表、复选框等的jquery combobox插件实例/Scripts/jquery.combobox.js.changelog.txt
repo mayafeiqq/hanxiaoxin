@@ -1,0 +1,26 @@
+version 0.1.2.7
+- fixed: drop down list staying opened when click on the content and animation type is set to null or empty.
+		- uses mousedown event instead of click to fix issue.
+- fixed: the original Select element's onChange is called if a function is associated with it.
+
+version 0.1.2.6
+- re-architected: combobox code to expose public functions within the context of the specific element
+
+version 0.1.2.5
+breaking changes
+	- changed: split parameters. differentiate between style and other settings
+non-breaking changes
+	- added: height (max-height in stylesheet) to restrict the height of the drop-down list. navigation supports scrolling when scroll bars are present
+	- added: maximumContentHeight (max-height in stylesheet) parameter to clip content that do not fit within the background image
+	- changed: removed ddl height and content height parameters. using css max-height to control these
+	- added: addRange function accepts data with HTML text and title. (non-functional)	
+	- added: remove(). removes the jquery combobox leaving the original Select element.
+	- added: options.animationSpeed, to control the speed of opening and closing the drop down list.
+					can be "fast", "slow", or a number in milliseconds. based on jquery Animation speeds
+
+version 0.1.2.4 alpha
+- fixed: button state only available if background-image is set and is wide enough for different states
+- added: value display container can have multiple states
+
+version 0.1.2.3 alpha
+- added alignment of display value to the middle

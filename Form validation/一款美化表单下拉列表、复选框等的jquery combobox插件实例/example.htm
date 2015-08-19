@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>jquery.combox example by http://sc.xueit.com</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link type="text/css" href="style/screen/example.css" rel="stylesheet" media="all" />
+	<link type="text/css" title="combobox" href="style/screen/combobox.css" rel="stylesheet" media="all" />
+	<script type="text/javascript" src="firebug/firebug.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.js"></script>	
+  <script type="text/javascript" src="Scripts/jquery.dimensions.js"></script>
+  <script type="text/javascript" src="Scripts/jquery.combobox.js"></script>
+  <script type="text/javascript">
+  	var _officeItemListCombobox = null;
+  	var _cssStyleSelectJQ = null;
+  	var _animationTypeSelectJQ = null;
+  	var _animationType = "slide";
+
+		$(
+			function()
+			{
+				var comboboxSettings = {animationSpeed: 100};
+				
+				// Create the example combobox
+				setupCombobox();
+				
+				// Create the different styles combobox
+				_cssStyleSelectJQ = $("#cssStyleSelect").combobox({}, comboboxSettings);
+				// Combobox has its own onChange event, but the onChange of the Select element can be used as well.
+				// changeAnimation works in this manner.
+				_cssStyleSelectJQ.combobox.onChange = 
+					function()
+					{	
+						changeStyle();
+					};
+				
+				// Create the Animation types combobox
+				// Note: There is no need to configure the onChange event as the event is defined in the html
+				//	<select id="animationTypeSelect" onchange="changeAnimation()">
+				_animationTypeSelectJQ = $("#animationTypeSelect").combobox({}, comboboxSettings);
+			});
+			
+			// create a jquery combobx and set the Css class styles
+			function setupCombobox()
+			{
+				_officeItemListCombobox = $('#officeItemList').combobox(
+					{
+						comboboxContainerClass: "comboboxContainer",
+						comboboxValueContentContainerClass: "comboboxValueContainer",
+						comboboxValueContentClass: "comboboxValueContent",
+						comboboxDropDownClass: "comboboxDropDownContainer",
+						comboboxDropDownButtonClass: "comboboxDropDownButton",
+						comboboxDropDownItemClass: "comboboxItem",
+						comboboxDropDownItemHoverClass: "comboboxItemHover",
+						comboboxDropDownGroupItemHeaderClass: "comboboxGroupItemHeader",
+						comboboxDropDownGroupItemContainerClass: "comboboxGroupItemContainer"
+					},
+					{
+						animationType: _animationType,
+						width: 250
+					});
+			}
+			
+			function changeStyle()
+			{
+			
+				var cssStyleSelectJQ = $("#cssStyleSelect");
+				var selectedStyle = cssStyleSelectJQ.val();
+				selectedStyle = "style/screen/" + selectedStyle + ".css";
+				
+				_officeItemListCombobox.combobox.remove()
+				
+				$("link[@title='combobox']").attr("href", selectedStyle);
+				
+				// Time delay required for the new css stylesheet to be processed by the Browser,
+				// otherwise, jquery.combobox cannot calculate the correct layout for the new styles
+				setTimeout(setupCombobox, 1);
+			}
+			
+			function changeAnimation()
+			{
+				var animationTypeSelectJQ = $("#animationTypeSelect");
+				_animationType = animationTypeSelectJQ.val();
+				
+				_officeItemListCombobox.combobox.remove();
+				setupCombobox();
+			}
+			
+			// Example to show the dynamic insertion of data directly into the original Select element
+			// and then calling the jQuery combobox to synchronise by calling update().
+			function updateCombobox()
+			{
+				var officeItemListSelectJQ = $("#officeItemList");
+				var currentDate = Date();
+				officeItemListSelectJQ.append("<option value='" + currentDate + "'>" + currentDate + "</option>");
+
+				_officeItemListCombobox.combobox.update();
+			}
+	</script>
+</head>
+<body>
+	<div id="content">
+		<div id="optionsContainer">
+			<fieldset>
+				<legend>styles</legend>
+				<select id="cssStyleSelect">
+					<option value="combobox">default</option>
+					<option value="combobox_mac">mac</option>
+					<option value="combobox_vista_black">vista</option>
+					<option value="combobox_diagonal">diagonals</option>
+					<option value="combobox_plastic">plastic</option>
+					<option value="combobox_metal">metal</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>animation types</legend>
+				<select id="animationTypeSelect" onchange="changeAnimation()">
+					<option value="slide">slide</option>
+					<option value="fade">fade</option>
+					<option value="none">none</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>commands</legend>
+				<button id="updateButton" onclick="javascript:updateCombobox()">add date</button> 
+			</fieldset>
+		</div> 
+		<div id="dataContainer">
+			<div id="header">
+				<h1>jquery combobox demo</h1>
+				<h3>version 0.1.2.7, 31 march 2008</h3>
+				<p>
+				you can change the visual appearance and animation type using the options on the left.
+				<br />
+				<br />
+				<a href="http://jquery.sanchezsalvador.com">jquery.sanchezsalvador.com</a>
+				</p>
+			</div>
+			<hr />
+			<select id="officeItemList">
+				<option value="1">eraser</option>
+				<option value="3">pencil</option>
+				<option value="4">ruler</option>
+				<option value="5">ink</option>
+				<optgroup label="paper types">
+					<option value="7" selected="selected">A4 paper</option>
+					<option value="8">A3 paper</option>
+					<option value="9">letter-sized paper</option>
+				</optgroup>
+				<optgroup label="chair types">
+					<option value="10">executive</option>
+					<option value="11">janitor</option>
+					<option value="12">lazy boy</option>
+					<option value="13">the quick brown fox jumps over the lazy dog</option>
+				</optgroup>
+			</select>
+			<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In nisl justo, viverra vitae, elementum sed, vulputate vel, urna. Fusce ut velit. Integer justo ante, pellentesque id, tempor a, eleifend at, ante. Proin fringilla sodales risus. Maecenas urna. Integer tristique bibendum felis. Pellentesque elementum. Aliquam eget diam in nunc venenatis bibendum. Praesent vitae velit. Nulla egestas sem sit amet pede euismod elementum. Nulla sed elit.
+			Nullam lorem sapien, faucibus non, fringilla sit amet, scelerisque posuere, odio. Vestibulum nec nibh. Proin et nisi nec lorem dictum venenatis. Vivamus accumsan, ante consectetuer pretium cursus, lacus velit volutpat tellus, vitae semper nisl metus feugiat erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus nec elit ac nunc iaculis pulvinar. Duis id enim. Proin neque risus, vehicula vitae, malesuada in, euismod eget, dolor. Phasellus cursus, diam id feugiat iaculis, justo enim semper magna, vel venenatis elit risus viverra quam. Donec vehicula ante id tortor. 
+			</p>
+		</div>
+	</div>
+</body>
+<!--
+   ┏━━━━━━━━━━━━━━━━━━━━━┓
+   ┃             源 码 爱 好 者               ┃
+   ┣━━━━━━━━━━━━━━━━━━━━━┫
+   ┃                                          ┃
+   ┃           提供源码发布与下载             ┃
+   ┃                                          ┃
+   ┃        http://sc.xueit.com           ┃
+   ┃                                          ┃
+   ┃            互助、分享、提高              ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━┛
+-->
+</html>

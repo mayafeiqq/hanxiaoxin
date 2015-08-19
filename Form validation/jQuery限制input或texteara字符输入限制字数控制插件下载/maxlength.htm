@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>maxlength</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="maxlength.js"></script>
+<script type="text/javascript">
+    <!--
+    
+    $(function () {
+        $('textarea.limited').maxlength({
+            'feedback' : '.charsLeft', 
+			'useInput' : true
+        });
+        
+        $('input.limited').maxlength({
+            'feedback' : '.charsLeft' 
+        });
+        
+        $('textarea.wordLimited').maxlength({
+            'words': true,
+            'feedback': '.wordsLeft',
+			'useInput' : true
+        });
+    });
+    
+    //-->
+</script>
+<style type="text/css" media="screen">
+    <!--
+        body { margin: 10px; padding: 0; font: 1em "Trebuchet MS", verdana, arial, sans-serif; font-size: 100%; }
+        h1 { margin-bottom: 2px; }
+        div.container { margin: auto; width: 90%; margin-bottom: 10px;}
+        textarea { width: 80%;}
+        input, textarea { font-family: Arial, verdana; font-size: 125%; padding: 7px; border: 1px solid #999; }
+		.charsLeft,.wordsLeft{ color:#ff0000;}
+    -->
+</style>
+</head>
+
+<body id="page">
+    <h1>maxlength</h1>
+    <h2>textarea</h2>
+    <form action="">
+        <p>可以输入 <span class="charsLeft">20</span> 个字符</p>
+        <textarea class="limited"></textarea>
+        <input type="hidden" name="maxlength" value="20" />
+    </form>
+    
+    <h2>input</h2>
+    <form action="">
+        <p>可以输入 <span class="charsLeft">10</span> 个字符</p>
+        <input maxlength="10" class="limited" />
+    </form>
+    
+    <h2>By words</h2>
+    <form action="">
+        <p>可以输入 <span class="wordsLeft">10</span> 单词</p>
+        <textarea class="wordLimited"></textarea>
+        <input type="hidden" name="maxlength" value="10" />
+    </form>
+</body>
+</html>

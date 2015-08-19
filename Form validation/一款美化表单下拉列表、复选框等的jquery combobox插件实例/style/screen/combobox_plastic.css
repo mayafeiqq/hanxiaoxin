@@ -1,0 +1,68 @@
+﻿.comboboxContainer
+{
+	border: none;
+}
+
+.comboboxValueContainer
+{
+	background-image: url(../../images/shadow_value2.gif);
+}
+
+.comboboxValueContent
+{
+	padding-left: 8px;
+	padding-top: 0px;
+	margin-top: -2px;
+	text-transform: uppercase;
+	max-height: 20px;
+}
+
+.comboboxDropDownContainer
+{
+	border: none;
+	background: url(../../images/shadow_ddl2.png) repeat-y left top;
+	padding-left: 3px;
+	cursor: default;
+}
+
+.comboboxDropDownButton
+{
+	width: 25px;
+	height: 35px;
+	background-image: url(../../images/shadow_button.gif);
+}
+
+.comboboxGroupItemHeader
+{
+	display: block;
+	border-bottom: solid 1px #999;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.comboboxGroupItemContainer
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.comboboxItem
+{
+	color: #000;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.comboboxItemHover
+{
+	border: dashed 1px #000;
+	margin: -1px;
+	font-weight: bold;
+}
+
+.comboboxGroupItemContainer .comboboxItem
+{
+	padding-left: 20px;
+	margin-left: 0px;
+}
